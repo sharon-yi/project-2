@@ -1,0 +1,14 @@
+@import "setup";
+@import "variables";
+@import "header";
+@import "nav";
+
+
+* {
+  border: 1px solid red;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font;
+}
