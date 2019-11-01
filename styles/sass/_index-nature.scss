@@ -1,0 +1,41 @@
+
+.nature-spaces {
+  background-color: #2B331B;
+
+  .nature-banner {
+    width: 100%;
+  }
+  .nature-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+
+  .nature-info {
+    width: 70%;
+
+    h2 {
+      font-family: $font;
+      font-size: $h2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #FFD300;
+      margin: 0;
+    }
+  }
+  }
+
+  button {
+    font-family: $font;
+    font-size: $button;
+    font-weight: 100;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 220px;
+    padding: 15px 0 10px 0;
+  }
+}
+
+
+
