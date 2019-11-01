@@ -1,0 +1,13 @@
+.gallery {
+  background-color: #171B0E;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    margin: 0;
+    li {
+      width: 320px;
+    }    
+  }
+}

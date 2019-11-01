@@ -6,6 +6,7 @@
 @import "index-article";
 @import "index-gift-card";
 @import "index-nature";
+@import "index-gallery";
 
 
 // * {
@@ -25,3 +26,5 @@ p {
   line-height: 3.0rem;
   letter-spacing: 0.09rem;
   }
+
+  @import "footer";
