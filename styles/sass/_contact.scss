@@ -1,0 +1,24 @@
+.contact-main {
+  background-color: #2B331B;
+  position: relative;
+  height: 700px;
+
+  .social-media {
+    ul {
+      display: flex;
+      list-style: none;
+      a {
+          color: #FFD300;
+      }
+    }
+  }
+
+  .contact-message {
+    position: absolute;
+    width: 500px;
+    left: 800px;
+  }
+
+
+
+}
