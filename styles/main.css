@@ -179,8 +179,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-header {
+.banner-index {
   background: url(../images/home-header.jpg);
+}
+
+.banner-contact {
+  background: url(../images/contact-header.jpg);
+}
+
+.banner-blog {
+  background: url(../images/blog-header.jpg);
+}
+
+.banner-index, .banner-contact, .banner-blog {
   background-color: #171B0D;
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +249,74 @@ h1 span {
   color: white;
 }
 
+.more-info {
+  background-color: #36451E;
+  padding: 330px 0 100px 0;
+  position: relative;
+}
+
+.more-info .home-box-image {
+  position: absolute;
+  left: calc(100% - 844px);
+  top: -420px;
+  max-width: 844px;
+}
+
+.more-info h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+.flex-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-info .info-and-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - 20px);
+}
+
+.flex-info .info-and-icon .post-info {
+  width: 86%;
+  padding-bottom: 40px;
+}
+
+.flex-info .info-and-icon .circle-icon {
+  background: #FFD300;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 2px;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Josefin Sans";
+}
+
+p {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
+  line-height: 3.0rem;
+  letter-spacing: 0.09rem;
 }

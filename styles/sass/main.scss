@@ -2,6 +2,7 @@
 @import "variables";
 @import "header";
 @import "nav";
+@import "index-more-info";
 
 
 // * {
@@ -12,3 +13,12 @@ html {
   font-size: 62.5%;
   font-family: $font;
 }
+
+p {
+  font-family: $pfont;
+  font-size: $p;
+  font-weight: 200;
+  color: white;
+  line-height: 3.0rem;
+  letter-spacing: 0.09rem;
+  }

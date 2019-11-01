@@ -1,5 +1,15 @@
-header {
-  background: url(../images/home-header.jpg);
+.banner-index {
+    background: url(../images/home-header.jpg);
+}
+
+.banner-contact {
+    background: url(../images/contact-header.jpg);
+}
+
+.banner-blog {
+    background: url(../images/blog-header.jpg);
+}
+.banner-index, .banner-contact, .banner-blog {
   background-color: #171B0D;
   background-position: center;
   background-repeat: no-repeat;
