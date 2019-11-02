@@ -191,6 +191,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .banner-blog {
   background: url(../images/blog-header.jpg);
+  min-height: 70vh;
 }
 
 .banner-index,
@@ -619,6 +620,55 @@ h1 span {
   border: none;
   width: 90%;
   margin-bottom: 30px;
+}
+
+body {
+  background-color: #2b331b;
+}
+
+.blog-main {
+  position: relative;
+}
+
+aside {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 100px;
+  top: 50px;
+  width: 400px;
+}
+
+aside img {
+  position: absolute;
+  width: 95%;
+  top: -20px;
+}
+
+.aside-content {
+  margin-left: 40px;
+  background-color: #171B0E;
+  padding: 370px 15px 10px 15px;
+}
+
+.aside-content h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ffd300;
+  margin: 0;
+}
+
+.aside-content ul {
+  padding-left: 20px;
+}
+
+.aside-content li {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  padding: 0;
 }
 
 html {
