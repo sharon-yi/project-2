@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/2a20f3910e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Get In Touch</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow:200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Get In Touch</title>
-</head>
-
-<body>
-  <header class="banner-contact">
-    <div class="wrapper">
-      <div class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <h1>Get In Touch</h1>
-    </div>
-  </header>
-  <main class="contact-main">
-    <section class="contact-message">
-      <fieldset>
-        <input type="text">
-        <input type="email">
-        <input type="text">
-        <input type="submit">
-      </fieldset>
-    </section>
-    <section class="all-contact-info wrapper">
-      <div class="social-media">
-        <ul>
-          <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
-          <li><a href="#"><i class="fab fa-whatsapp fa-3x"></i></a></li>
-        </ul>
-        <div class="contact-info">
-          <p>info@email.com</p>
-          <p>123 - 456 - 7890</p>
-          <p>123 Queen Street West, Unit 10</p>
-          <p>Toronto, Ontario</p>
-          <p>M5V2D5</p>
+  <body>
+    <header class="banner-contact">
+      <div class="wrapper">
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <h1>Get In Touch</h1>
       </div>
-
-    </section>
-  </main>
-  <footer>
-    <p class="footer-cr">Copyright © 2018 Juno College</p>
-  </footer>
-</body>
-
+    </header>
+    <main class="contact-main">
+      <section class="contact-message-container">
+        <fieldset class="contact-message">
+          <label for="name" class="visuallyHidden">Name</label>
+          <input type="text" class="name" id="name" placeholder="Name" />
+          <label for="email" class="visuallyHidden">Email</label>
+          <input type="email" class="email" id="email" placeholder="Email" />
+          <label for="message" class="visuallyHidden">Message</label>
+          <textarea
+            class="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </section>
+      <section class="all-contact-info wrapper">
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-whatsapp fa-3x"></i></a>
+            </li>
+          </ul>
+          <div class="contact-info">
+            <p>info@email.com</p>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-cr">Copyright © 2018 Juno College</p>
+    </footer>
+  </body>
 </html>

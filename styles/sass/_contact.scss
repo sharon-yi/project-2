@@ -1,24 +1,81 @@
 .contact-main {
-  background-color: #2B331B;
+  background-color: #2b331b;
   position: relative;
-  height: 700px;
+  height: 500px;
 
   .social-media {
     ul {
       display: flex;
+      justify-content: space-between;
+      width: 160px;
       list-style: none;
+      margin: 0;
+      padding: 100px 0 20px 0;
       a {
-          color: #FFD300;
+        color: #ffd300;
       }
     }
+    .contact-info p {
+      margin: 0;
+    }
   }
+}
+
+.contact-message-container {
+  position: absolute;
+  left: 38%;
+  top: -200px;
 
   .contact-message {
-    position: absolute;
-    width: 500px;
-    left: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 800px;
+    height: 600px;
+    background-color: #171b0e;
+    border: none;
+    box-shadow: 20px 20px #ffd300;
+    font-family: $pfont;
+
+    input,
+    textarea {
+      border: none;
+      background-color: #171b0e;
+      color: white;
+      font-size: 2rem;
+      height: 20px;
+      width: 40%;
+      resize: none;
+      letter-spacing: 0.2rem;
+    }
+
+    input[type="text"].name,
+    input[type="email"] {
+      border-bottom: 1px solid #ffd300;
+      margin-top: 100px;
+      height: 40px;
+      padding-left: 20px;
+    }
+    .message {
+      border: 1px solid #ffd300;
+      margin: 0 auto;
+      width: 90%;
+      height: 300px;
+      padding: 15px 0 0 20px;
+    }
+    input::placeholder {
+      color: white;
+    }
+    button {
+      font-family: $font;
+      font-size: $button;
+      font-weight: 400;
+      text-transform: uppercase;
+      background-color: #ffd300;
+      color: black;
+      border: none;
+      width: 90%;
+      margin-bottom: 30px;
+    }
   }
-
-
-
 }
