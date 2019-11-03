@@ -1,60 +1,65 @@
-* {
-  border: 1px solid red;
-}
+// * {
+//   border: 1px solid red;
+// }
 
 body {
   background-color: #2b331b;
 }
 
 .blog-main {
-  position: relative;
-  display: flex;
-}
-aside {
-  position: absolute;
-  margin-top: 100px;
-  top: 50px;
-  width: 400px;
-  img {
-    position: absolute;
-    width: 95%;
-    top: -20px;
-  }
-}
-.aside-content {
-  margin-left: 40px;
-  background-color: #171B0E;
-  padding: 370px 15px 10px 15px;
-
-  h4 {
-    font-size: $h4;
-    font-weight: 400;;
-    text-transform: uppercase;
-    color: #ffd300;
-    margin: 0;
-  }
-  p {
-    margin: 0;
-    font-size: 1.4rem;
-  }
-  ul {
-    padding-left: 20px;
-    margin: 0;
-  }
-
-  li {
-    font-family: $pfont;
-    font-size: 1.4rem;
-    font-weight: 200;
-    color: white;
-    line-height: 3rem;
-    letter-spacing: 0.09rem;
-    padding: 0;
-  }
-}
-.blog-section-container {
   display: grid;
-  grid-template-columns: 50%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  gap: 10%;
+  grid-template-areas:
+    "aside .blog-section"
+    ".blog-comments"
+    ".fieldset-area"
+    "footer";
+  .blog-section {
+    grid-column: 2;
+  }
+  .blog-comments {
+    grid-column: 2;
+  }
+  .fieldsetarea {
+    grid-column: 2;
+  }
+  footer {
+    grid-column: span 2;
+    width: 100%;
+  }
 
+  aside {
+    position: relative;
+    top: 60px;
+
+    img {
+      width: 95%;
+      position: absolute;
+      top: -20px;
+    }
+    .aside-content {
+      margin-left: 40px;
+      background-color: #171b0e;
+      padding: 370px 20px 10px 20px;
+    }
+    h4 {
+      font-size: $h4;
+      margin: 10px 0;
+      color: #ffd300;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 0.2rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    ul {
+      font-family: $pfont;
+      padding-left: 20px;
+      font-size: 1.6rem;
+      color: white;
+    }
+  }
+  
 }
