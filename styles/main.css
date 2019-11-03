@@ -622,17 +622,23 @@ h1 span {
   margin-bottom: 30px;
 }
 
+* {
+  border: 1px solid red;
+}
+
 body {
   background-color: #2b331b;
 }
 
 .blog-main {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 aside {
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   margin-top: 100px;
   top: 50px;
   width: 400px;
@@ -651,24 +657,40 @@ aside img {
 }
 
 .aside-content h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffd300;
   margin: 0;
 }
 
+.aside-content p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
 .aside-content ul {
   padding-left: 20px;
+  margin: 0;
 }
 
 .aside-content li {
   font-family: "Barlow";
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 200;
   color: white;
   line-height: 3rem;
   letter-spacing: 0.09rem;
   padding: 0;
+}
+
+.blog-section-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 html {
