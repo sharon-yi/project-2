@@ -179,6 +179,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans";
+}
+
+p {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
+  line-height: 3.0rem;
+  letter-spacing: 0.09rem;
+}
+
 .banner-index {
   background: url(../images/home-header.jpg);
   height: 70vh;
@@ -282,9 +296,9 @@ h1 span {
 
 .more-info .home-box-image {
   position: absolute;
-  left: calc(100% - 844px);
+  right: 0;
   top: -420px;
-  max-width: 844px;
+  max-width: 50vw;
 }
 
 .more-info h2 {
@@ -652,8 +666,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
-  gap: 2% 10%;
-      grid-template-areas: "aside .blog-section" ".blog-comments" ".fieldset-area" "footer";
+  gap: 1% 8%;
 }
 
 .blog-main .blog-section {
@@ -690,7 +703,7 @@ body {
 .blog-main aside .aside-content {
   margin-left: 40px;
   background-color: #171b0e;
-  padding: 370px 20px 10px 20px;
+  padding: 90% 20px 10px 20px;
 }
 
 .blog-main aside h4 {
@@ -708,9 +721,12 @@ body {
 
 .blog-main aside ul {
   font-family: "Barlow";
-  padding-left: 20px;
   font-size: 1.6rem;
+  font-weight: 200;
   color: white;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  padding-left: 20px;
 }
 
 .blog-main .blog-container {
@@ -807,7 +823,7 @@ body {
 .fieldsetarea input,
 .fieldsetarea textarea {
   border: none;
-  background-color: #2B331B;
+  background-color: #2b331b;
   color: white;
   font-size: 2rem;
   height: 20px;
@@ -862,6 +878,10 @@ body {
   padding: 15px 0 10px 0;
 }
 
+footer {
+  text-align: center;
+}
+
 @media (max-width: 1020px) {
   .contact-main {
     height: 900px;
@@ -905,18 +925,142 @@ body {
   }
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Josefin Sans";
+@media (max-width: 480px) {
+  .banner-contact {
+    min-height: 400px;
+  }
+  .contact-main {
+    height: 980px;
+  }
+  .contact-main .social-media {
+    text-align: center;
+  }
+  .contact-main .social-media ul {
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  .contact-message-container .contact-message {
+    -webkit-box-shadow: 10px 10px #ffd300;
+            box-shadow: 10px 10px #ffd300;
+  }
+  .contact-message-container .contact-message .message {
+    height: 400px;
+  }
 }
 
-p {
-  font-family: "Barlow";
-  font-size: 1.8rem;
-  font-weight: 200;
-  color: white;
-  line-height: 3.0rem;
-  letter-spacing: 0.09rem;
+@media (max-width: 1350px) {
+  .blog-main {
+    gap: 1% 4%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .blog-main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "1" "2" "3" "4" "5";
+  }
+  .blog-main .blog-section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: 1;
+  }
+  .blog-main .blog-comments {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: 3;
+  }
+  .blog-main aside {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2;
+  }
+  .blog-main .fieldsetarea {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: 4;
+  }
+  .blog-main footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: 5;
+    width: 100%;
+  }
+  .blog-main .blog-container img {
+    display: block;
+  }
+  .blog-main aside img {
+    width: 40%;
+  }
+  .blog-main aside .aside-content {
+    padding: 6% 20px 4% 40%;
+  }
+  .blog-main .blog-comments {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 910px) {
+  .blog-main .blog-comments {
+    margin-top: 0;
+  }
+  .blog-main aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-main aside img {
+    width: 65%;
+  }
+  .blog-main aside .aside-content {
+    padding: 60% 30px 20px 30px;
+    margin: 50px 10%;
+  }
+  .fieldsetarea fieldset input[type="text"].name,
+  .fieldsetarea fieldset input[type="email"] {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .fieldsetarea fieldset .message {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-blog {
+    min-height: 300px;
+  }
+  .blog-main .blog-container .blog-section {
+    padding: 60% 5% 5% 5%;
+  }
+  .blog-main aside .aside-content {
+    margin: 50px 5%;
+  }
+  .blog-comments {
+    margin: auto 5%;
+  }
+  .fieldsetarea {
+    margin: auto 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-main .blog-container .blog-section h2 {
+    font-size: 3.5rem;
+  }
+  .blog-comments h3 {
+    font-size: 3.5rem;
+  }
 }
 
 footer {

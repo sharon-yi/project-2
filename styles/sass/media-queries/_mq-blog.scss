@@ -1,0 +1,109 @@
+@media (max-width: 1350px) {
+  .blog-main {
+    gap: 1% 4%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .blog-main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "1"
+      "2"
+      "3"
+      "4"
+      "5";
+    .blog-section {
+      grid-area: 1;
+    }
+    .blog-comments {
+      grid-area: 3;
+    }
+    aside {
+      grid-area: 2;
+    }
+    .fieldsetarea {
+      grid-area: 4;
+    }
+    footer {
+      grid-area: 5;
+      width: 100%;
+    }
+
+    .blog-container {
+      img {
+        display: block;
+      }
+    }
+
+    aside {
+      img {
+        width: 40%;
+      }
+      .aside-content {
+        padding: 6% 20px 4% 40%;
+      }
+    }
+
+    .blog-comments {
+      margin-top: 10%;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .blog-main {
+    .blog-comments {
+      margin-top: 0;
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 65%;
+      }
+      .aside-content {
+        padding: 60% 30px 20px 30px;
+        margin: 50px 10%;
+      }
+    }
+  }
+
+  .fieldsetarea fieldset input[type="text"].name,
+  .fieldsetarea fieldset input[type="email"] {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .fieldsetarea fieldset .message {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-blog {
+    min-height: 300px;
+  }
+  .blog-main .blog-container .blog-section {
+    padding: 60% 5% 5% 5%;
+  }
+  .blog-main aside .aside-content {
+    margin: 50px 5%;
+  }
+  .blog-comments {
+    margin: auto 5%;
+  }
+  .fieldsetarea {
+    margin: auto 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-main .blog-container .blog-section h2 {
+    font-size: 3.5rem;
+  }
+  .blog-comments h3 {
+    font-size: 3.5rem;
+  }
+}

@@ -1,20 +1,5 @@
 @import "setup";
 @import "variables";
-@import "header";
-@import "nav";
-@import "media-queries/mq-nav";
-@import "index-more-info";
-@import "index-article";
-@import "index-gift-card";
-@import "index-nature";
-@import "index-gallery";
-@import "contact";
-@import "blog";
-@import "media-queries/mq-contact";
-
-// * {
-//   border: 1px solid red;
-// }
 
 html {
   font-size: 62.5%;
@@ -29,6 +14,18 @@ p {
   line-height: 3.0rem;
   letter-spacing: 0.09rem;
   }
-
-  @import "footer";
+  
+@import "header";
+@import "nav";
+@import "media-queries/mq-nav";
+@import "index-more-info";
+@import "index-article";
+@import "index-gift-card";
+@import "index-nature";
+@import "index-gallery";
+@import "contact";
+@import "blog";
+@import "media-queries/mq-contact";
+@import "media-queries/mq-blog";
+@import "footer";
 

@@ -31,3 +31,27 @@
     margin-top: 50px;
   }
 }
+
+@media (max-width: 480px) {
+.banner-contact {
+  min-height: 400px;
+}
+.contact-main {
+    height: 980px;
+    .social-media {
+      text-align: center;
+      ul {
+        padding-top: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+.contact-message-container .contact-message {
+  box-shadow: 10px 10px #ffd300;
+
+  .message {
+    height: 400px;
+  }
+}
+
+}
