@@ -1,0 +1,33 @@
+@media (max-width: 1020px) {
+  .contact-main {
+    height: 900px;
+    .social-media {
+      text-align: center;
+      ul {
+        padding-top: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  .contact-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: -100px;
+    margin: 0 auto;
+  }
+  .all-contact-info {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-message-container .contact-message input[type="text"].name,
+  .contact-message-container .contact-message input[type="email"] {
+    width: 90%;
+    margin-top: 50px;
+  }
+}

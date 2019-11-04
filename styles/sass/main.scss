@@ -2,6 +2,7 @@
 @import "variables";
 @import "header";
 @import "nav";
+@import "media-queries/mq-nav";
 @import "index-more-info";
 @import "index-article";
 @import "index-gift-card";
@@ -9,7 +10,7 @@
 @import "index-gallery";
 @import "contact";
 @import "blog";
-
+@import "media-queries/mq-contact";
 
 // * {
 //   border: 1px solid red;
@@ -30,3 +31,4 @@ p {
   }
 
   @import "footer";
+

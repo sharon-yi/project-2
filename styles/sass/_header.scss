@@ -1,16 +1,19 @@
 .banner-index {
   background: url(../images/home-header.jpg);
-  min-height: 70vh;
+  height: 70vh;
+  min-height: 500px;
 }
 
 .banner-contact {
   background: url(../images/contact-header.jpg);
-  min-height: 50vh;
+  height: 50vh;
+  min-height: 300px;
 }
 
 .banner-blog {
   background: url(../images/blog-header.jpg);
-  min-height: 70vh;
+  height: 70vh;
+  min-height: 300px;
 }
 .banner-index,
 .banner-contact,
@@ -38,4 +41,8 @@ h1 {
     padding: 10px 0 0 5px;
     margin-bottom: 10px;
   }
+}
+
+.fa-hamburger {
+  display: none;
 }
