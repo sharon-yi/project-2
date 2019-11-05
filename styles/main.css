@@ -290,7 +290,7 @@ h1 span {
 
 .more-info {
   background-color: #36451E;
-  padding: 330px 0 100px 0;
+  padding: 300px 0 100px 0;
   position: relative;
 }
 
@@ -298,7 +298,8 @@ h1 span {
   position: absolute;
   right: 0;
   top: -420px;
-  max-width: 50vw;
+  width: 50vw;
+  max-width: 800px;
 }
 
 .more-info h2 {
@@ -349,7 +350,7 @@ h1 span {
 .article-posts {
   background-color: #171B0E;
   position: relative;
-  height: 850px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,14 +371,18 @@ h1 span {
   top: -40px;
   -webkit-box-shadow: 25px 25px #FFD300;
           box-shadow: 25px 25px #FFD300;
+  width: 45vw;
+  max-width: 800px;
 }
 
 .article-posts .article-image-right {
   position: absolute;
-  left: calc(100% - 670px);
+  right: 0;
   top: 460px;
   -webkit-box-shadow: -25px 25px #FFD300;
           box-shadow: -25px 25px #FFD300;
+  width: 45vw;
+  max-width: 800px;
 }
 
 .article-posts .flex-article {
@@ -444,7 +449,7 @@ h1 span {
 
 .gift-card {
   background-color: #2B331B;
-  padding: 120px 0 120px 0;
+  padding: 10% 0 5% 0;
 }
 
 .gift-card .gift-card-info {
@@ -547,8 +552,17 @@ h1 span {
   margin: 0;
 }
 
+.gallery ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .gallery ul img {
-  width: 370px;
+  width: 90%;
 }
 
 .contact-main {
@@ -1060,6 +1074,58 @@ footer {
   }
   .blog-comments h3 {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1480px) {
+  .more-info .home-box-image {
+    top: -350px;
+  }
+  .article-posts {
+    height: 800px;
+  }
+  .article-posts h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .more-info {
+    padding: 250px 0 100px 0;
+  }
+  .more-info .home-box-image {
+    top: -300px;
+  }
+  .article-posts {
+    height: 750px;
+  }
+  .article-posts h3 {
+    font-size: 3rem;
+  }
+  .article-posts p {
+    font-size: 1.5rem;
+  }
+  .gift-card .gift-card-info {
+    width: 70%;
+  }
+  .nature-spaces .nature-left {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .more-info {
+    padding: 220px 0 100px 0;
+  }
+  .more-info .home-box-image {
+    top: -250px;
+  }
+  .article-posts {
+    height: 650px;
+  }
+  .article-posts .article-image-right {
+    top: 400px;
   }
 }
 

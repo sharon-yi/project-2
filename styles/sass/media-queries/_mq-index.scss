@@ -1,0 +1,60 @@
+@media (max-width: 1480px) {
+  .more-info {
+    .home-box-image {
+      top: -350px;
+    }
+  }
+  .article-posts {
+    height: 800px;
+    h3 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .more-info {
+    padding: 250px 0 100px 0;
+    .home-box-image {
+      top: -300px;
+    }
+  }
+  .article-posts {
+    height: 750px;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .gift-card {
+  .gift-card-info {
+    width: 70%;
+  }
+}
+  .nature-spaces {
+    .nature-left {
+      width: 25%;
+      height: 25%;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .more-info {
+    padding: 220px 0 100px 0;
+    .home-box-image {
+      top: -250px;
+    }
+  }
+  .article-posts {
+    height: 650px;
+    .article-image-right {
+    top: 400px;
+    }
+
+  }
+}
+
+@media (max-width: 980px)
