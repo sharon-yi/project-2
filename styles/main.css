@@ -343,7 +343,6 @@ h1 span {
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  vertical-align: middle;
   padding: 2px;
 }
 
@@ -1118,14 +1117,99 @@ footer {
   .more-info {
     padding: 220px 0 100px 0;
   }
+  .more-info h2 {
+    font-size: 3.5rem;
+  }
   .more-info .home-box-image {
     top: -250px;
+  }
+  .more-info .flex-info .info-and-icon .fa-3x {
+    font-size: 2rem;
+  }
+  .more-info .flex-info .info-and-icon .circle-icon {
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
   .article-posts {
     height: 650px;
   }
   .article-posts .article-image-right {
     top: 400px;
+  }
+}
+
+@media (max-width: 980px) {
+  .more-info {
+    padding: 220px 0 100px 0;
+  }
+  .more-info .home-box-image {
+    top: -200px;
+    min-width: 485px;
+  }
+  .flex-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flex-info .info-and-icon {
+    width: 100%;
+  }
+  .flex-info .info-and-icon .post-info {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .article-posts {
+    height: 1500px;
+  }
+  .article-posts .flex-article .article-1-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50%;
+  }
+  .article-posts .flex-article .article-1 {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-posts .flex-article .article-2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .article-posts .flex-article .article-2 {
+    margin-top: 55%;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .article-posts .article-image-left {
+    top: -60px;
+    width: 80%;
+  }
+  .article-posts .article-image-right {
+    top: 720px;
+    width: 80%;
+  }
+  .gift-card .gift-card-info {
+    width: 80%;
   }
 }
 
