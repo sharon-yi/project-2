@@ -229,6 +229,7 @@ h1 {
   text-transform: uppercase;
   line-height: 6rem;
   letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h1 span {
@@ -238,6 +239,9 @@ h1 span {
   width: 375px;
   padding: 10px 0 0 5px;
   margin-bottom: 10px;
+  text-shadow: none;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
 }
 
 .fa-hamburger {
@@ -1210,6 +1214,177 @@ footer {
   }
   .gift-card .gift-card-info {
     width: 80%;
+  }
+  .gift-card h2 {
+    font-size: 3.5rem;
+  }
+  .nature-spaces .nature-banner {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nature-spaces .nature-container .nature-info h2 {
+    font-size: 3.5rem;
+  }
+  .nature-spaces .nature-left {
+    -webkit-box-shadow: -10px 10px #ffd300;
+            box-shadow: -10px 10px #ffd300;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h1 span {
+    width: 310px;
+  }
+  .more-info {
+    padding-top: 250px;
+  }
+  .more-info h2 {
+    font-size: 3rem;
+  }
+  .article-posts {
+    height: 1350px;
+  }
+  .article-posts h3 {
+    font-size: 2.5rem;
+  }
+  .article-posts .flex-article .article-1-container {
+    margin-top: 40%;
+  }
+  .article-posts .flex-article .article-2 {
+    margin-top: 40%;
+  }
+  .article-posts .article-image-right {
+    top: 600px;
+  }
+  .gift-card {
+    padding: 15% 0;
+  }
+  .gift-card h2 {
+    font-size: 3rem;
+  }
+  .nature-spaces .nature-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nature-spaces .nature-container .nature-info {
+    width: 90%;
+    padding-top: 80px;
+  }
+  .nature-spaces .nature-container .nature-info h2 {
+    font-size: 3rem;
+  }
+  .nature-spaces .nature-container .nature-left {
+    width: 60%;
+  }
+  .nature-spaces button {
+    display: block;
+    margin: 0 auto;
+  }
+  .gallery ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h1 span {
+    width: 275px;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .more-info {
+    padding-top: 52%;
+  }
+  .more-info h2 {
+    font-size: 2.5rem;
+  }
+  .more-info .home-box-image {
+    top: -170px;
+    min-width: 90vw;
+  }
+  .flex-info .info-and-icon {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .flex-info .info-and-icon .post-info {
+    width: 80%;
+  }
+  .article-posts {
+    height: 1150px;
+  }
+  .article-posts h3 {
+    font-size: 2.3rem;
+  }
+  .article-posts .article-image-right {
+    top: 510px;
+    -webkit-box-shadow: -10px 10px #ffd300;
+            box-shadow: -10px 10px #ffd300;
+  }
+  .article-posts .article-image-left {
+    -webkit-box-shadow: 10px 10px #ffd300;
+            box-shadow: 10px 10px #ffd300;
+  }
+  .article-posts .flex-article .article-1-container {
+    margin-top: 25%;
+  }
+  .article-posts .flex-article .article-2 {
+    margin-top: 35%;
+  }
+  .article-posts button {
+    font-size: 2.0rem;
+    margin-top: 10px;
+  }
+  .gift-card h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .gift-card button {
+    font-size: 2.0rem;
+    margin-top: 10px;
+  }
+  .nature-spaces .nature-container {
+    padding-top: 50px;
+  }
+  .nature-spaces .nature-container .nature-info {
+    padding-top: 50px;
+  }
+  .nature-spaces .nature-container .nature-info h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .nature-spaces .nature-container .nature-left {
+    width: 70%;
+  }
+  .nature-spaces button {
+    font-size: 2.0rem;
+    margin-top: 10px;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    padding-bottom: 30px;
   }
 }
 

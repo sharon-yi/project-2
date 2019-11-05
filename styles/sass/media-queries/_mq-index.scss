@@ -106,7 +106,7 @@
       }
       .article-2-container {
         display: flex;
-      justify-content: center;
+        justify-content: center;
       }
       .article-2 {
         margin-top: 55%;
@@ -117,18 +117,211 @@
       }
     }
     .article-image-left {
-    top: -60px;
-    width: 80%;
-  }
-  .article-image-right {
-    top: 720px;
-    width: 80%;
-  }
+      top: -60px;
+      width: 80%;
+    }
+    .article-image-right {
+      top: 720px;
+      width: 80%;
+    }
   }
   // giftcard
   .gift-card {
     .gift-card-info {
       width: 80%;
+    }
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .nature-spaces {
+    .nature-banner {
+      height: 300px;
+      object-fit: cover;
+    }
+    .nature-container {
+      .nature-info {
+        h2 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    .nature-left {
+      box-shadow: -10px 10px #ffd300;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+    span {
+      width: 310px;
+    }
+  }
+  .more-info {
+    padding-top: 250px;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .article-posts {
+    height: 1350px;
+    h3 {
+      font-size: 2.5rem;
+    }
+    .flex-article {
+      .article-1-container {
+        margin-top: 40%;
+      }
+      .article-2 {
+        margin-top: 40%;
+      }
+    }
+    .article-image-right {
+      top: 600px;
+    }
+  }
+
+  .gift-card {
+    padding: 15% 0;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .nature-spaces {
+    .nature-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .nature-info {
+        width: 90%;
+        padding-top: 80px;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+      .nature-left {
+        width: 60%;
+      }
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .gallery {
+    ul {
+      li:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 3.5rem;
+    span {
+      width: 275px;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .more-info {
+    padding-top: 52%;
+    h2 {
+      font-size: 2.5rem;
+    }
+    .home-box-image {
+      top: -170px;
+      min-width: 90vw;
+    }
+  }
+  .flex-info {
+    .info-and-icon {
+      justify-content: space-around;
+      .post-info {
+        width: 80%;
+      }
+    }
+  }
+
+  .article-posts {
+    height: 1150px;
+    h3 {
+      font-size: 2.3rem;
+    }
+    .article-image-right {
+      top: 510px;
+      box-shadow: -10px 10px #ffd300;
+    }
+    .article-image-left {
+      box-shadow: 10px 10px #ffd300;
+    }
+    .flex-article {
+      .article-1-container {
+        margin-top: 25%;
+      }
+      .article-2 {
+        margin-top: 35%;
+      }
+    }
+      button {
+    font-size: 2.0rem;
+    margin-top: 10px;
+  }
+  }
+
+  .gift-card {
+    h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+      button {
+    font-size: 2.0rem;
+        margin-top: 10px;
+
+  }
+  }
+
+  .nature-spaces {
+    .nature-container {
+      padding-top: 50px;
+      .nature-info {
+        padding-top: 50px;
+        h2 {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          text-align: center;
+        }
+      }
+      .nature-left {
+        width: 70%;
+      }
+    }
+      button {
+    font-size: 2.0rem;
+        margin-top: 10px;
+
+  }
+  }
+
+  .gallery {
+    ul {
+    flex-direction: column;
+    li {
+      padding-bottom: 30px;
+    }
     }
   }
 }

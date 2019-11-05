@@ -32,6 +32,7 @@ h1 {
   text-transform: uppercase;
   line-height: 6rem;
   letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px #000000;
 
   span {
     display: block;
@@ -40,6 +41,9 @@ h1 {
     width: 375px;
     padding: 10px 0 0 5px;
     margin-bottom: 10px;
+    text-shadow: none;
+    box-shadow: 5px 5px 20px black;
+
   }
 }
 
