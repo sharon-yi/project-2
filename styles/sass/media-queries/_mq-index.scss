@@ -321,6 +321,9 @@
     flex-direction: column;
     li {
       padding-bottom: 30px;
+      img {
+        object-fit: contain;
+      }
     }
     }
   }
