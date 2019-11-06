@@ -23,15 +23,19 @@
   <body>
     <header class="banner-blog">
       <div class="wrapper">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="hamburger hamburger-bg"
+          ><i class="fas fa-hamburger fa-3x"></i
+        ></label>
         <div class="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" class="current">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <a href="#"><i class="fas fa-hamburger fa-3x"></i></a>
         </div>
+        
         <h1>Blog</h1>
       </div>
     </header>
@@ -56,7 +60,10 @@
       </aside>
 
       <div class="blog-container">
-        <img src="images/blog-post-image.jpg" alt="A waitress setting a table in a modern restaurant" />
+        <img
+          src="images/blog-post-image.jpg"
+          alt="A waitress setting a table in a modern restaurant"
+        />
         <section class="blog-section">
           <h2>Employment Opportunities</h2>
           <p class="date">Monday October 30, 2019 by Sharon Yi</p>

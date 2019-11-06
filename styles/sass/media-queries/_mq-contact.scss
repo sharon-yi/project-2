@@ -34,7 +34,7 @@
 
 @media (max-width: 480px) {
 .banner-contact {
-  min-height: 400px;
+  max-height: 400px;
 }
 .contact-main {
     height: 980px;
@@ -53,5 +53,4 @@
     height: 400px;
   }
 }
-
 }
