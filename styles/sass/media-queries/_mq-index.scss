@@ -319,11 +319,13 @@
   .gallery {
     ul {
     flex-direction: column;
-    height: auto;
+    justify-content: space-between;
     li {
       padding-bottom: 30px;
       img {
         object-fit: contain;
+        width: 90%;
+        height: 90%;
       }
     }
     }
