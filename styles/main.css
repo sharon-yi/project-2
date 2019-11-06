@@ -207,7 +207,7 @@ p {
 
 .banner-blog {
   background: url(../images/blog-header.jpg);
-  height: 70vh;
+  height: 60vh;
   min-height: 300px;
 }
 
@@ -865,10 +865,10 @@ body {
 .blog-comments .single-comments {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "img act-comment";
+      grid-template-areas: "img comment-container";
 }
 
-.blog-comments .single-comments .act-comment {
+.blog-comments .single-comments .comment-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,14 +882,14 @@ body {
   padding-left: 20px;
 }
 
-.blog-comments .single-comments .act-comment .date {
+.blog-comments .single-comments .comment-container .date {
   margin: 0;
   color: #ffd300;
   font-weight: 400;
   letter-spacing: 0.2rem;
 }
 
-.blog-comments .single-comments .act-comment .comment {
+.blog-comments .single-comments .comment-container .comment {
   margin-top: 5px;
   margin-bottom: 60px;
 }
@@ -1031,6 +1031,9 @@ footer {
     padding-top: 0;
     margin: 0 auto;
   }
+  .contact-message-container {
+    top: -50px;
+  }
   .contact-message-container .contact-message {
     -webkit-box-shadow: 10px 10px #ffd300;
             box-shadow: 10px 10px #ffd300;
@@ -1130,7 +1133,7 @@ footer {
 
 @media (max-width: 700px) {
   .banner-blog {
-    min-height: 300px;
+    max-height: 300px;
   }
   .blog-main .blog-container .blog-section {
     padding: 60% 5% 5% 5%;
@@ -1152,6 +1155,12 @@ footer {
   }
   .blog-comments h3 {
     font-size: 3.5rem;
+  }
+  .blog-comments .single-comments .comment-container {
+    padding-left: 0;
+  }
+  .blog-comments .single-comments img {
+    width: 80%;
   }
 }
 

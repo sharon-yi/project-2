@@ -83,7 +83,7 @@
 
 @media (max-width: 700px) {
   .banner-blog {
-    min-height: 300px;
+    max-height: 300px;
   }
   .blog-main .blog-container .blog-section {
     padding: 60% 5% 5% 5%;
@@ -103,7 +103,21 @@
   .blog-main .blog-container .blog-section h2 {
     font-size: 3.5rem;
   }
-  .blog-comments h3 {
+  .blog-comments {
+  
+  h3 {
     font-size: 3.5rem;
   }
+  .single-comments {
+    .comment-container {
+
+      padding-left: 0;
+    }
+    img {
+      width: 80%;
+    }
+  }
+
+  }
+
 }
