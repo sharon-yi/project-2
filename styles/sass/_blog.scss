@@ -99,9 +99,9 @@ body {
   }
   .single-comments {
     display: grid;
-    grid-template-areas: "img act-comment";
+    grid-template-areas: "img comment-container";
 
-    .act-comment {
+    .comment-container {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;

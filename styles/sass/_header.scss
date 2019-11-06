@@ -12,7 +12,7 @@
 
 .banner-blog {
   background: url(../images/blog-header.jpg);
-  height: 70vh;
+  height: 60vh;
   min-height: 300px;
 }
 .banner-index,
@@ -43,10 +43,8 @@ h1 {
     margin-bottom: 10px;
     text-shadow: none;
     box-shadow: 5px 5px 20px black;
-
   }
 }
-
-.fa-hamburger {
+.hamburger {
   display: none;
 }

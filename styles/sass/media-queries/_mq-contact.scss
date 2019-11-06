@@ -33,10 +33,10 @@
 }
 
 @media (max-width: 480px) {
-.banner-contact {
-  min-height: 400px;
-}
-.contact-main {
+  .banner-contact {
+    max-height: 400px;
+  }
+  .contact-main {
     height: 980px;
     .social-media {
       text-align: center;
@@ -46,12 +46,15 @@
       }
     }
   }
-.contact-message-container .contact-message {
-  box-shadow: 10px 10px #ffd300;
+  .contact-message-container {
+    top: -50px;
 
-  .message {
-    height: 400px;
+    .contact-message {
+      box-shadow: 10px 10px #ffd300;
+
+      .message {
+        height: 400px;
+      }
+    }
   }
-}
-
 }
