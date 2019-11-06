@@ -1,12 +1,13 @@
 .gallery {
   background-color: #171B0E;
+  padding: 100px 0;
   ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 100px 0;
-    margin: 0;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
 
     li { 
       display: flex;

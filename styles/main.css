@@ -616,6 +616,7 @@ input[type=checkbox] {
 
 .gallery {
   background-color: #171B0E;
+  padding: 100px 0;
 }
 
 .gallery ul {
@@ -626,10 +627,10 @@ input[type=checkbox] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding: 100px 0;
-  margin: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .gallery ul li {
@@ -1474,6 +1475,9 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .gallery ul li {
     padding-bottom: 30px;
